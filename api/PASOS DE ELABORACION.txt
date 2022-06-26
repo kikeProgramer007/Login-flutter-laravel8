@@ -1,0 +1,24 @@
+
+> composer create-project laravel/laravel:^8.0 example-app      <-- DESCARGAR LARAVEL 8
+> php artisan make:controller AuthController			<-- CREAR CONTROLADOR
+
+
+> php artisan migrate						<-- MIGRAR BASEDATA
+
+
+
+flutter packages get
+
+
+ ALT + SHIF + F -->ORDENAR CODIGO
+
+
+POSTMAN
+
+POST EN REGISTER
+http://127.0.0.1:8000/api/auth/register
+{
+    "name" : "Enrique Condori",
+    "email" : "enrique@gmail.com",
+    "password" : "1234567"
+}

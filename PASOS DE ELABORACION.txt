@@ -1,0 +1,59 @@
+
+REQUSITOS:
+- composer
+
+- Laravel
+
+- jwt laravel (para autentificacionf)
+  fuente: https://www.nigmacode.com/laravel/jwt-en-laravel/
+
+creacion de laravel
+
+-instalar laravel
+
+> composer global require laravel/installer			<-- INSTALAR LARAVEL
+> laravel new api						<-- CREAR API LARAVEL
+> cd api							<-- INGRESAR AL PROYECT
+> php artisan --version 					<-- VER VERSION DE LARAVEL
+> cd ..								<-- ATRAS
+> code api							<-- ABRIR PROYECT EN VSCODE
+> php artisan migrate						<-- MIGRAR BASE DE DATOS
+
+PAQUETE DE AUTENTIFICACION
+> composer require tymon/jwt-auth:dev-develop --prefer-source	<--INSTALANDO A LARAVEL JWT
+> php artisan jwt:secret					<-- GENERAR TOKEN
+
+ EN composer.json
+	"tymon/jwt-auth": "dev-develop",
+ LO REEMPLAZAMOS POR
+        "tymon/jwt-auth": "^1.0.0-beta.3@dev"
+
+> php artisan make:controller AuthController			<-- CREAR CONTROLADOR
+
+> 
+
+
+=============================================================================================
+ENPOINTS:
+
+POST: http://192.168.0.18/login-flutter/api/public/api/auth/register
+
+{
+    "name" : "Enrique Condori",
+    "email" : "enrique32@gmail.com",
+    "password" : "123456337"
+}
+
+
+POST: http://192.168.0.18/login-flutter/api/public/api/auth/login
+{
+    "email" : "enrique32@gmail.com",
+    "password" : "123456337"
+}
+
+=============================================================================================
+
+
+
+
+ ALT + SHIF + F -->ORDENAR CODIGO
